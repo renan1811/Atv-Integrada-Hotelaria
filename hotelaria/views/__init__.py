@@ -1,0 +1,1 @@
+from .hospede import HospedeViewSet
