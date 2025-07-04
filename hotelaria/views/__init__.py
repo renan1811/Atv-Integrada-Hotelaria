@@ -1,2 +1,3 @@
 from .hospede import HospedeViewSet
-from .serviço import ServiçoViewSets
+from .serviço import ServiçoViewSet
+from .pagamento import PagamentoViewSet
