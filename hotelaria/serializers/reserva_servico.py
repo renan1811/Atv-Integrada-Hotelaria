@@ -1,4 +1,4 @@
-from rest_framework.serializer import ModelSerializer
+from rest_framework.serializers import ModelSerializer
 from hotelaria.models.reserva_servico import Reserva_servico
 
 class Reserva_servicoSerializer(ModelSerializer):
