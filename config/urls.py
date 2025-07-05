@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-from hotelaria.views import HospedeViewSet, ServiçoViewSet, PagamentoViewSet, QuartoViewSet, FuncionarioViewSet
+from hotelaria.views import HospedeViewSet, ServiçoViewSet, PagamentoViewSet, QuartoViewSet, FuncionarioViewSet, ReservaViewSet
 
 router = DefaultRouter()  
 
@@ -26,6 +26,7 @@ router.register(r"Serviço", ServiçoViewSet)
 router.register(r"Pagamento", PagamentoViewSet)
 router.register(r"Quartos", QuartoViewSet)
 router.register(r"Funcionario", FuncionarioViewSet)
+router.register(r"Reserva", ReservaViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
